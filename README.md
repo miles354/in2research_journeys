@@ -10,6 +10,7 @@ short_name: davidps
 name: David PS
 project: HPC
 year: 2025
+github: dpshelio
 ---
 
 David is an astrophysicist interested in brains.

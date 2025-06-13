@@ -6,5 +6,4 @@ year: 2025
 github: Flowing12
 ---
 
-
-<!-- TODO David is an astrophysicist interested in brains. -->
+Luthyano is an aerospace engineer interested in high performance computers.

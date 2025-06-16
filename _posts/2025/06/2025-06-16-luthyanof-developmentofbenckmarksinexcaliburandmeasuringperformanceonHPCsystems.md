@@ -3,7 +3,7 @@ title: Development of benchmarks in excalibur and measuring performance on HPC s
 date: 2025-06-16
 time: "10:30:00"
 author: luthyanof
-categories: ["learning", "python", "introduction to shell and uv"] 
+categories: ["learning", "python", "shell", "uv"] 
 layout: post
 ---
 

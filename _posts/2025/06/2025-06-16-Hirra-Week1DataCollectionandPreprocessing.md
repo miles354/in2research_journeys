@@ -26,4 +26,4 @@ I’m building NLP tools that detect **adverse drug reactions (ADRs)** and the s
 Reddit data was straightforward to collect; Twitter required careful handling due to stricter access terms.
 
 ### Next week’s plan
-* Train baseline Machine Learning models (Naïve Bayes and Logistic Regression).
+* Train baseline Machine Learning models (Naïve Bayes and Logistic Regression). 

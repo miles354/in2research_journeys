@@ -17,10 +17,11 @@ I’m building NLP tools that detect **adverse drug reactions (ADRs)** and the s
 
 ### Tasks completed this week
 
-| Task | ✔ |
-|---|------|
-| Selected four datasets: two patient-forums (PsyTAR, CADEC-v2), Reddit (self-labelled using Reddit API), and Twitter (SMM4H-20). |
-| Created preprocessing scripts:<br>• **`classic_preprocess`** – heavy cleaning, stemming, tokenisation (for traditional ML).<br>• **`preprocess_transformer`** – minimal cleaning, preserving negations, numbers, and drug terms (for deep-learning models). |
+| Task                                                                                                                         | Checklist |
+|------------------------------------------------------------------------------------------------------------------------------|:--------:|
+| Selected four datasets: two patient‐forums (PsyTAR, CADEC‐v2), Reddit (self-labelled using Reddit API), and Twitter (SMM4H-20). | ✔        |
+| Created preprocessing scripts:<br>• **`classic_preprocess`** – heavy cleaning, stemming, tokenisation (for traditional ML).<br>• **`preprocess_transformer`** – minimal cleaning, preserving negations, numbers, and drug terms (for deep-learning models). | ✔        |
+
 
 ### Early challenges 
 Reddit data was straightforward to collect; Twitter required careful handling due to stricter access terms.

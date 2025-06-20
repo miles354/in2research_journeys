@@ -32,14 +32,14 @@ You can subscribe to our [RSS feed]({{"feed.xml" | prepend: baseurl}}) if you'd 
   <ul class="posts">
     {% assign count = 0 %}
     {% for post in site.posts %}
+         {% assign post_url = post.url | prepend:site.baseurl %}
             {% assign count = count | plus: 1 %}
             {% if count <= 5 %}
 			{% for author in site.authors %}
 			   {% if author.short_name == post.author %}
 			   {% assign author_url = author.url | prepend:site.baseurl %}
-         {% assign post_url = post.url | prepend:site.baseurl %}
 			   {% endif %}
-		    {% endfor %}
+                        {% endfor %}
 			<!-- TODO: add photo of the author -->
                 <li><span>{{ post.date | date_to_string }}</span> &raquo; <span><a href="{{ author_url }}.html">{{ post.author }}</a></span> &raquo;  <a href="{{ post_url }}">{{ post.title }}</a>
 	              <p class="entry">{{ post.content | truncate:250 }}

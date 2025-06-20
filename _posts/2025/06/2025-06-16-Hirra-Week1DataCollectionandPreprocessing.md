@@ -2,7 +2,7 @@
 title: Week 1 – Data Collection and Pre-processing
 date: 2025-06-16
 time: "11:30"
-author: Hirra
+author: hirraa
 categories: ["nlp", "preprocessing", "sentiment-analysis", "pharmacovigilance"]
 layout: post
 ---

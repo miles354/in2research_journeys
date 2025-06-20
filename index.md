@@ -36,13 +36,14 @@ You can subscribe to our [RSS feed]({{"feed.xml" | prepend: baseurl}}) if you'd 
             {% if count <= 5 %}
 			{% for author in site.authors %}
 			   {% if author.short_name == post.author %}
-			   {% assign author_url = author.url %}
+			   {% assign author_url = author.url | prepend:site.baseurl %}
+         {% assign post_url = post.url | prepend:site.baseurl %}
 			   {% endif %}
 		    {% endfor %}
 			<!-- TODO: add photo of the author -->
-                <li><span>{{ post.date | date_to_string }}</span> &raquo; <span><a href="{{ author_url }}.html">{{ post.author }}</a></span> &raquo;  <a href="{{ post.url }}">{{ post.title }}</a>
+                <li><span>{{ post.date | date_to_string }}</span> &raquo; <span><a href="{{ author_url }}.html">{{ post.author }}</a></span> &raquo;  <a href="{{ post_url }}">{{ post.title }}</a>
 	              <p class="entry">{{ post.content | truncate:250 }}
-                  <a href="{{ post.url }}">Read more...</a>
+                  <a href="{{ post_url }}">Read more...</a>
                 </p>
                 </li>
             {% endif %}
@@ -56,7 +57,7 @@ You can subscribe to our [RSS feed]({{"feed.xml" | prepend: baseurl}}) if you'd 
   <!-- From http://vvv.tobiassjosten.net/jekyll/jekyll-tag-cloud/ -->
 {% for category in site.categories %}
 <li style="font-size: {{category | last | size | times: 100 | divided_by: site.categories.size | plus: 70 }}%">
-<a href="/blog/categories/#{{ category | first | slugize}}">
+<a href="/in2research_journeys/posts/categories/#{{ category | first | slugize}}">
   {{ category | first }}
 </a>
 </li>

@@ -14,7 +14,7 @@ crumbs:
     text: Advanced Research Computing
   - link: https://www.ucl.ac.uk/advanced-research-computing/education
     text: Education
-  - link: /
+  - link: /in2research_journeys/
     text: in2research journeys
 
 plugins:
@@ -54,9 +54,8 @@ defaults:
     values:
       layout: "default"
 
-    
 markdown: kramdown
-permalink: /:year/:month/:day/:title.html
+permalink: /posts/:year/:month/:day/:title.html
 kramdown:
   hard_wrap: false
   input: GFM

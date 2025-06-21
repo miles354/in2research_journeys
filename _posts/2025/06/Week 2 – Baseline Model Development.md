@@ -3,7 +3,7 @@ title: "Week 2 – Baseline Model Development"
 date: 2025-06-20
 time: "17:00"
 author: hirraa
-categories: ["nlp", “machine learning, "sentiment analysis","social media"]
+categories: ["nlp", "machine learning", "sentiment analysis","social media"]
 layout: post 
 ---
 
@@ -71,8 +71,8 @@ Before summarising, I plotted ROC curves to inspect the true-positive vs. false-
 | Model                   | Train/Test Split |Test only: `CADEC_v2`  |
 |-------------------------|:----------------:|:------:|
 | Naïve Bayes             | 0.86             | 0.84   |
-| **Logistic Regression** | **0.89**         | **0.89** |
-| Random Forest           | 0.89             | 0.90   |
+| **Logistic Regression** |0.89              | 0.89   |
+| Random Forest           |**0.89**          |**0.90**|
 
 **Bold* indicates the top performer in each column. ADR’s AUC stays steady on `CADEC_v2`, while sentiment dips on Twitter could be overfitting.
 

@@ -37,9 +37,9 @@ layout: post
 Here you write your content on markdown. If you want to add an image, you can add them under
 `images/yyyy/mm` and link them as:
 
-![](/images/yyyy/mm/image-file.jpg)
+![](/in2research_journeys/images/yyyy/mm/image-file.jpg)
 
 or if you want to have control of its size, using HTML format:
 
-<img height="200px" src="/images/yyyy/mm/image-file.jpg" />
+<img height="200px" src="/in2research_journeys/images/yyyy/mm/image-file.jpg" />
 ```

@@ -13,5 +13,5 @@ Additionally, I have covered introduction to HPC including topics such as commun
 
 At the end of the week, I have started exploring `OpenFOAM`, `spack` and motorBike CPU benckmark.
 
-![Coding Kitty](/images/2025/06/CodingKitty.png)
+![Coding Kitty](/in2research_journeys/images/2025/06/CodingKitty.png)
 *Public domain from [Easy-Peasy.AI](https://easy-peasy.ai/ai-image-generator/images/cat-coding-on-laptop-ingenious-feline-tech-prowess)* 

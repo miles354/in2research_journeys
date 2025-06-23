@@ -78,7 +78,7 @@ Before summarising, I plotted ROC curves to inspect the true-positive vs. false-
 
  #### **Below are the macro averaged ROC curves for Train/Test Split:** 
 
-<img src="/images/2025/06/adr_roc.jpg" alt="ADR" width="48%" /> <img src="/images/2025/06/covid_sentiment_roc.jpg" alt="COVID" width="48%" />
+<img src="/in2research_journeys/images/2025/06/adr_roc.jpg" alt="ADR" width="48%" /> <img src="/in2research_journeys/images/2025/06/covid_sentiment_roc.jpg" alt="COVID" width="48%" />
 
 ---
 

@@ -35,7 +35,7 @@ After that, I researched how to visually represent the data collected after runn
 Finally, I explored the idea of using `paraFoam` within the processor files, which resulted in a temporary file where the visualized
 result changed shape, as shown in the image below.
 
-![Test2](/in2rearch_journeys/images/2025/06/Test2.png)
+![Test2](/in2research_journeys/images/2025/06/Test2.png)
 *Public domain from [Paraview in OpenFoam]*
 
 ___________________________________________________________________________________________________________________________________

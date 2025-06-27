@@ -29,13 +29,13 @@ helped me better understand the structure of benchmarks and steps involved in ex
 After that, I researched how to visually represent the data collected after running the test, which led to the image below by using
 `paraFoam`.
 
-![Test1](/in2research_journeys/image/2025/06/Test1.png)
+![Test1](/in2research_journeys/images/2025/06/Test1.png)
 *Public domain from [Paraview in OpenFOAM]*
 
 Finally, I explored the idea of using `paraFoam` within the processor files, which resulted in a temporary file where the visualized
 result changed shape, as shown in the image below.
 
-![Test2](/in2rearch_journeys/image/2025/06/Test2.png)
+![Test2](/in2rearch_journeys/images/2025/06/Test2.png)
 *Public domain from [Paraview in OpenFoam]*
 
 ___________________________________________________________________________________________________________________________________

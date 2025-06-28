@@ -8,11 +8,11 @@ categories: ["reinforcement learning", "preprocessing", "qiskit", "quantum compu
 layout: post
 ---
 
-### What the project is about 
+### What is my project about?
 I am building a machine learning model that predicts errors, and using these to optimise quantum circuits.
-### Why use Quantum Computers?
+### Why use Quantum Computers, and what problems exist?
 * Quantum computers promise revolutionary speedups due to quantum mechanical effects, however its reliability is limited by noisy hardware. My project aims to use AI to increase efficiency and error-awareness in Noisy Intermediate Scale Quantum (NISQ) devices, prior to Quantum Error Correction (QEC).
-### Why use Quantum Computers?
+### Overall Goal
 * Develop an AI-enhanced quantum circuit optimiser.
 * Predict the effects of quantum noise (qubit decoherence, quantum gate and measurement errors)
 * Recommend optimisations to improve the efficiency of quantum circuits.

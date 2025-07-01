@@ -1,5 +1,5 @@
 ---
-title: Development of benchmarks in excalibur and measuring performance on HPC systems.
+title: Week 2 - Study Reframe Models and Usage of a Docker
 date: 2025-06-20
 time: "16:30:00"
 author: luthyanof

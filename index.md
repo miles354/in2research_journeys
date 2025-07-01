@@ -40,7 +40,7 @@ You can subscribe to our [RSS feed]({{"feed.xml" | prepend: baseurl}}) if you'd 
             {% assign post_url = post.url | prepend:site.baseurl %}
             <!-- TODO: add photo of the author -->
             <li><span>{{ post.date | date_to_string }}</span> &raquo; <span><a href="{{ author_url }}.html">{{ post.author }}</a></span> &raquo;  <a href="{{ post_url }}">{{ post.title }}</a>
-            <p class="entry">{{ post.content | truncate:250 }}
+            <p class="entry">{{ post.content | strip_html | truncate:250 }}
               <a href="{{ post_url }}">Read more...</a>
             </p>
             </li>

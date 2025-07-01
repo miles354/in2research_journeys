@@ -1,5 +1,5 @@
 ---
-title: Development of benchmarks in excalibur and measuring performance on HPC systems.
+title: Week 1 - Shell and 'uv' Learning
 date: 2025-06-16
 time: "10:30:00"
 author: luthyanof

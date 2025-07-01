@@ -1,5 +1,5 @@
 ---
-short_name: John
+short_name: john
 name: John Nocum
 project: Hacking Real-time AI workflows for Eye Diagnosis Using Open-Source Software
 year: 2025

@@ -1,7 +1,10 @@
 ---
 layout: default
 ---
-<h1>{{ page.name }}</h1>
+
+{% assign author_avatar = page.github | prepend: "http://github.com/" | append: ".png" %}
+
+<h1><img src="{{ author_avatar}}" height="25px" style="border-radius:12px;" /> {{ page.name }}</h1>
 <h2>{{ page.position }}</h2>
 
 {{ content }}

@@ -9,6 +9,15 @@ layout: default
   {% if author %}
     - <a href="{{ author.url | prepend:site.baseurl }}.html">{{ author.name }}</a>
   {% endif %}
+  {% if page.categories %}
+    {% assign post_categories = "" | split: "," %}
+    {% for category in page.categories %}
+  {% assign category_link = category | slugize | prepend: "/categories.html#" | prepend: site.baseurl | prepend: '"' | prepend: "<a href=" | append: '"' | append: ">" | append: category | append: "</a>"%}
+  {}
+      {% assign post_categories = post_categories | push: category_link %}
+    {% endfor %}
+  - {{post_categories | short_natural | join: ", "}}
+  {% endif %}
 </p>
 
 {{ content }}

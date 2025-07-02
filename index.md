@@ -57,7 +57,7 @@ You can subscribe to our [RSS feed]({{"feed.xml" | prepend: baseurl}}) if you'd 
   <!-- From http://vvv.tobiassjosten.net/jekyll/jekyll-tag-cloud/ -->
 {% for category in site.categories %}
 <li style="font-size: {{category | last | size | times: 100 | divided_by: site.categories.size | plus: 70 }}%">
-<a href="/in2research_journeys/posts/categories/#{{ category | first | slugize}}">
+<a href="{{site.baseurl}}/categories.html#{{ category | first | slugize }}">
   {{ category | first }}
 </a>
 </li>

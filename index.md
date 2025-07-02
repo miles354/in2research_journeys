@@ -17,8 +17,10 @@ Note that this_year is a string, but is converted as number adding 0
 
 {% for author in site.authors %}
   {% if author.year == this_year %}
-	{% assign authors_year = authors_year | plus: 1 %}
-	{% assign authors_names = authors_names | push: author.name %}
+    {% assign authors_year = authors_year | plus: 1 %}
+    {% assign author_url = author.url | prepend:site.baseurl | prepend: '<a href="' | append: '.html">' %}
+    {% assign author_name = author.name | prepend: author_url | append: '</a>' %}
+    {% assign authors_names = authors_names | push:  author_name %}
   {% endif %}
 {% endfor %}
 

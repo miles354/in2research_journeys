@@ -1,3 +1,4 @@
+#Same as DefinedQCircuit.py but with randomised number of qubits and gates
 import matplotlib
 matplotlib.use("Agg")  # Non-GUI backend
 

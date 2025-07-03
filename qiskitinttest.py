@@ -1,6 +1,5 @@
 import matplotlib
 matplotlib.use("Agg")  # Use non-GUI backend for image saving
-from qiskit.transpiler.passe import OptimizeCliffords,
 
 from qiskit import QuantumCircuit
 from qiskit.quantum_info import Statevector, partial_trace

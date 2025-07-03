@@ -1,6 +1,3 @@
-import matplotlib
-matplotlib.use("Agg")  # Non-GUI backend
-
 import random
 from math import pi
 import matplotlib.pyplot as plt
@@ -39,9 +36,11 @@ for i in range(num_gates):
         q1, q2, q3 = random.sample(range(num_qubits), 3)
         getattr(qc, gate_type)(q1, q2, q3)
 
-# Save circuit diagram as image (not just drawing)
+# Draw and display the circuit diagram (popup window)
 circuit_img = circuit_drawer(qc, output="mpl")
-circuit_img.savefig("circuit_defined_diagram.png")
+circuit_img.tight_layout()
+circuit_img.savefig("DefinedQ_circuit_diagram.png")  # Save the circuit diagram
+circuit_img.show()
 
 # Simulate final state
 state = Statevector.from_instruction(qc)
@@ -56,14 +55,25 @@ def get_bloch_components(dm):
     z = dm.data[0, 0].real - dm.data[1, 1].real
     return [x, y, z]
 
-# Save Bloch spheres for each qubit
-for i, dm in enumerate(reduced_dms):
-    b = Bloch()
-    b.add_vectors(get_bloch_components(dm))
-    b.title = f"Qubit {i}"
-    b.save(f"bloch_defined_qubit_{i}.png")
-    b.render()
+# Plot Bloch spheres for all qubits in a grid
+cols = 3  # Number of columns in grid (adjust as you like)
+rows = (num_qubits + cols - 1) // cols
+fig = plt.figure(figsize=(4 * cols, 4 * rows))
+fig.suptitle("Bloch Spheres for All Qubits", fontsize=16)
+axes = [fig.add_subplot(rows, cols, i + 1, projection='3d') for i in range(num_qubits)]
 
+for i, (dm, ax) in enumerate(zip(reduced_dms, axes)):
+    b = Bloch(fig=fig, axes=ax)
+    b.add_vectors(get_bloch_components(dm))
+    b.render()
+    ax.set_title(f"Qubit {i}")
+
+fig.tight_layout()
+fig.subplots_adjust(top=0.9)
+fig.savefig("DefinedQ_bloch_spheres.png")  # Save the figure
+plt.show()  # Popup showing all Bloch spheres
+
+# Print some circuit info
 depth = qc.depth()
 print("Circuit depth:", depth)
-print("Gate count", num_gates)
+print("Gate count:", num_gates)

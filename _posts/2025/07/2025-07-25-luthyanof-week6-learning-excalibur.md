@@ -1,5 +1,5 @@
 ---
-title:Week 6 - Benchmark and testing within a HPC system
+title: Week 6 - Benchmark and testing within a HPC system
 date: 2025-07-25
 time: "11:00:00"
 author: luthyanof

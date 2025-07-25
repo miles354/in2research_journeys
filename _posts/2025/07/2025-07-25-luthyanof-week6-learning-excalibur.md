@@ -10,7 +10,7 @@ ________________________________________________________________________________
 **Introduction**
 ___________________________________________________________________________________________________________________________________
 
-This week, I began the process of creating a benchmark to test HPC performance. I used examples such as Hello World, Sobrero, and Stream to better understand how benchmarks are structured and executed.
+This week, I began the process of creating a benchmark to test HPC performance. I used examples such as Hello World, Sombrero, and Stream to better understand how benchmarks are structured and executed.
 
 ___________________________________________________________________________________________________________________________________
 **Challenges**

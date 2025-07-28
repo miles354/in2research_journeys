@@ -1,11 +1,12 @@
-+ Layout: post
 ---
-
 title: Week 4 – Setting Up Reinforcement Learning and Heuristic Algorithms
 date: 2025-07-18
 time: "18:00"
 author: miles
 categories: ["Proximal Policy Optimisation", "quantum circuit optimisation", "heuristic algorithm"]
+layout: post
+---
+
 
 ### What is my project about?
 

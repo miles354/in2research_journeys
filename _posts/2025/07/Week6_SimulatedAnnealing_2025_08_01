@@ -1,0 +1,39 @@
+---
+title: Week 6 – Simulated Annealing
+date: 2025-08-01
+time: "10:00"
+author: miles
+categories: ["github", "quantum circuit optimisation", "qiskit"]
+layout: post
+---
+
+### What is my project about?
+
+I am building a machine learning model that predicts errors, and using these to optimise quantum circuits.
+
+### Why use Quantum Computers, and what problems exist?
+
+* Quantum computers promise revolutionary speedups due to quantum mechanical effects, however its reliability is limited by noisy hardware. My project aims to use AI to increase efficiency and error-awareness in Noisy Intermediate Scale Quantum (NISQ) devices, prior to Quantum Error Correction (QEC).
+
+### Overall Goal
+
+* Develop an AI-enhanced quantum circuit optimiser.
+* Predict the effects of quantum noise (qubit decoherence, quantum gate and measurement errors)
+* Recommend optimisations to improve the efficiency of quantum circuits.
+
+### Tasks completed this week
+
+| Task                                                                                                                         | Checklist |
+|------------------------------------------------------------------------------------------------------------------------------|:--------:|
+| Restructured the codebase and cleaned project files | ✔        |
+| Reproduced previously lost files and data | ✔        |
+| Improved my Simulated Annealing file more consistent in detecting errors (with 100% fidelity)
+this was however lost and am still attempting to reproduce fully (currently sometimes does not optimise whatsoever)| ✔        |
+| Created tester circuits to iteratively check that each Gate Rule is correct | ✔        |
+
+
+
+### Next week’s plan
+
+* Fully reproduce the Simulated Annealing file + extend gate logic
+* Return back to Reinforcement Learning policy file / resolve problem with reward function
